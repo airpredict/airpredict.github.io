@@ -316,13 +316,13 @@
                 $.ajax({
                     type: "GET",
                     contentType: "application/json; charset=utf-8",
-                    url: "http://220.134.52.177:5000/getSites",
+                    url: "https://cors-anywhere.herokuapp.com/http://220.134.52.177:5000/getSites",
                     success: function (data) {
                         appendDataToDataList(data);
 		                //updateSiteInfo('龍潭');
             			setTimeout(function(){
             			getLocation();
-            			},1000);
+            			},2000);
                     },
 		    error: function (error) {
 			console.log('error: ' + eval(error));
